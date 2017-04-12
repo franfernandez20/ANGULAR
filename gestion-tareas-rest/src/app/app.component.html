@@ -1,0 +1,28 @@
+<div id="web">
+  <div id="titulo">
+    <h1>
+      {{title}}
+    </h1>
+  </div>
+  <div id="lista">
+    <ul id="elements">
+      <span [class.visible]="active">There are no elements yet ! </span>
+      <li *ngFor="let elem of lista">
+        <input type="checkbox" (click)="checking(elem)" />
+            <a [class.tachado]="elem.check">{{elem.value}}</a>
+        <button class="btn-sm btn-danger" (click)="elemDelete(elem)" >
+          Borrar
+        </button>
+      </li>
+    </ul>
+    <hr>
+    <br>
+    <input type="text" [(ngModel)]="auxElem">
+    <button class="btn-md btn-primary" (click)="setAdd()">
+      Añadir
+    </button>
+    
+  </div>
+
+
+</div>

@@ -1,0 +1,26 @@
+#web{
+    width: 900px;
+    margin: auto;
+    
+    border: 1px solid chocolate;
+
+}
+#titulo{
+    width: 50%;
+    margin: 0 auto;
+}
+#lista{
+    width: 50%;
+    margin: 0 auto;
+}
+#lista>hr{
+    
+    width: 500px;
+    margin: 0 auto;
+}
+.visible{
+    display: none;
+}
+.tachado{
+    text-decoration:line-through;
+}
